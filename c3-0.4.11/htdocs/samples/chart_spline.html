@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link href="/css/c3.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="chart"></div>
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="/js/c3.min.js"></script>
+    <script>
+      var chart = c3.generate({
+        data: {
+          columns: [
+                 ['Sept 2001', 175],
+            ['Oct 2001', 300],
+            ['Nov 2001', 150],
+            ['Dec 2001', 40],
+            ['Jan 2002', 25],
+            ['Feb 2002', 10],
+            ['Mar 2002', 20],
+            ['Apr 2002', 5],
+            ['May 2002', 10],
+            ['Jun 2002', 20],
+            ['Jul 2002', 0]
+          ],
+          type: 'pie'
+      
+        },
+       
+        size: {
+        width: 640,
+        height: 600     
+        },
+
+        color: {
+    pattern: ['#C4C2C2', '#FF0000', '#C4C2C2', '#F9CECE', '#FAB0B0', '#FF8787', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5']  
+  }
+,
+  interaction: {
+  enabled: true
+}
+ 
+
+      });
+    </script>
+  </body>
+</html>
